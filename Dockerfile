@@ -1,7 +1,7 @@
 FROM openjdk:8-jdk
 
 RUN apt-get update && \
-  apt-get install -y build-essential git curl tar gzip libjpeg-dev imagemagick ttf-dejavu jpegoptim --no-install-recommends && \
+  apt-get install -y build-essential git curl tar gzip libjpeg-dev imagemagick ttf-dejavu jpegoptim grep --no-install-recommends && \
   mkdir -p ~/.m2
 
 RUN curl -L -o /tmp/docker-17.03.0-ce.tgz https://get.docker.com/builds/Linux/x86_64/docker-17.03.0-ce.tgz && \
