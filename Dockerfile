@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk
+FROM openjdk:9-jdk
 
 RUN apt-get update && \
   apt-get install -y build-essential git curl tar gzip libjpeg-dev imagemagick ttf-dejavu jpegoptim grep libpng-dev --no-install-recommends && \
