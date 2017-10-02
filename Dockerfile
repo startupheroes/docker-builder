@@ -1,7 +1,7 @@
 FROM openjdk:8-jdk-slim
 
 RUN apt-get update && \
-  apt-get install -y wget libxml2-utils build-essential git curl tar gzip libjpeg-dev imagemagick ttf-dejavu jpegoptim grep libpng-dev --no-install-recommends && \
+  apt-get install -y openssh wget libxml2-utils build-essential git curl tar gzip libjpeg-dev imagemagick ttf-dejavu jpegoptim grep libpng-dev --no-install-recommends && \
   mkdir -p ~/.m2 && \
   apt-get clean
 
