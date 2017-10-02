@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk
+FROM openjdk:8-jdk-slim
 
 RUN apt-get update && \
   apt-get install -y libxml2-utils build-essential git curl tar gzip libjpeg-dev imagemagick ttf-dejavu jpegoptim grep libpng-dev --no-install-recommends && \
